@@ -1,14 +1,3 @@
-
----
-title: "project1_ReproducibleResearch"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
----
-This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
-
-
 ##Loading and preprocessing the data
 
 ```{r reading data, echo=T}
@@ -27,8 +16,9 @@ total_steps <- with(data, aggregate(steps, by = list(date), FUN = sum, na.rm = T
 names(total_steps)<-cbind("date","steps")
 
 hist(total_steps$steps, xlab="total steps per day", main="total steps per day", col="indianred3")
-![plot of chunk total steps per day](figure/total_steps_per_day.png) 
+
 ```
+![plot of chunk total steps per day](figure/total_steps_per_day.png) 
 
 What are the mean and the median of total number of steps per day?
 
