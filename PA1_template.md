@@ -37,6 +37,7 @@ names(daily_steps)<-cbind("interval","steps")
 ggplot(daily_steps, aes(interval, steps))+geom_line()+xlab("5 minutes intervals")
 
 ```
+![plot of chunk daily activity pattern](figure/daily_activity_pattern.png) 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -63,6 +64,7 @@ names(newtotal_steps)<-cbind("date","steps")
 hist(newtotal_steps$steps, xlab="total steps per day", main="total steps per day", col="indianred3")
 
 ```
+![plot of chunk new dataset](figure/new_dataset.png) 
 
 What are the mean and the median of total number of steps per day with this new dataset?
 
@@ -90,4 +92,4 @@ final_daily_steps <- with(finaldata, aggregate(steps~interval+day, FUN = sum, na
 ggplot(final_daily_steps, aes(interval, steps))+facet_grid(.~day)+geom_line()+xlab("5 minutes intervals")+ggtitle("average number of steps, weekdays vs weekends")
 
 ```
- 
+ ![plot of chunk weekday vs weekend plot](figure/weekday_vs_weekend_plot.png) 
