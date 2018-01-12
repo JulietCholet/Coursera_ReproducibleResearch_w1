@@ -18,7 +18,7 @@ names(total_steps)<-cbind("date","steps")
 hist(total_steps$steps, xlab="total steps per day", main="total steps per day", col="indianred3")
 
 ```
-![figure/total_steps_per_day.png]
+![plot of chunk total steps per day](figures/total_steps_per_day.png) 
 
 What are the mean and the median of total number of steps per day?
 
