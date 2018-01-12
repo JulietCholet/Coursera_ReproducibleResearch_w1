@@ -21,5 +21,6 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
 
 This repo contains :
 - PA1_template.md (the markdown file)
+- PA1_template.md (corresponding markdown file, with figures)
 - PA1_template.html (the corresponding html file produced with knitr)
 - figures created with the code
