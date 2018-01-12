@@ -92,4 +92,4 @@ final_daily_steps <- with(finaldata, aggregate(steps~interval+day, FUN = sum, na
 ggplot(final_daily_steps, aes(interval, steps))+facet_grid(.~day)+geom_line()+xlab("5 minutes intervals")+ggtitle("average number of steps, weekdays vs weekends")
 
 ```
- ![plot of chunk weekday vs weekend plot](figures/weekday vs weekend plot.png) 
+ ![plot of chunk weekday vs weekend plot](figures/weekday_vs_weekend_plot.png) 
